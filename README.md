@@ -1,4 +1,28 @@
-*** Created By habibie@bnpb.go.id ***
+*** Created By habibie@bnpb.go.id *** (in Bahasa Indonesia)
+
+### How To Use ###
+
+Silahkan clone ke laptop Anda dengan perintah:
+
+`$ git clone https://github.com/habibieeddien/django-template-project.git`
+
+### Dependencies ###
+
+* Django 1.11.3 (saya menggunakannya pada Juli 2017)
+
+* HTML Template from http://freehtml5.co/
+
+### Folder Structur Project ###
+
+`--applications` : berisi semua aplikasi yang dibangun dalam project ini (form, model, views)
+
+`---applications/app1` : berisi aplikasi pertama dan seterusnya. Silahkan `startapp` di folder ini (`applications`).
+
+`--core` : berisi main setting project, wsgi service (for Production Deploy)
+
+`---core/static` : berisi file-file static (js, css, fonts, images, etc)
+
+`---core/templates` : berisi template HTML yang digunakan oleh Django Template Langunge (DTL)
 
 ### Django Start Project ###
 
