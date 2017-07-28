@@ -12,15 +12,32 @@ Untuk membuat project Django, ketik di terminal:
 Untuk membuat `application` baru dalam project `Django`, ketik di terminal:
 
 `$ cd applications`
+
 `$ python ../manage.py startapp app1`
 
 maka akan terbentuk folder `app1` yang otomatis berisi file:
+
     * __init__.py
+
     * admin.py
+
     * apps.py
+
     * models.py
+
     * tests.py
+
     * views.py
+
+### Django Create Model (Create Table on DB) ###
+
+Setelah mendefinisikan `models.py` lakukan sintak berikut di terminal:
+
+`$ python manage.py makemigrations`
+
+`$ python manage.py migrate`
+
+maka akan otomatis update struktur / schema isi DB
 
 ### Run Development Server ###
 
@@ -33,7 +50,8 @@ Untuk run server development, ketik di terminal:
 * install apache2-lib-mod_wsgi
 * enable mod_wsgi: `$ sudo a2enmod wsgi`
 * setting apache di `sudo vi /etc/apache2/site-available/000-default.conf` :
-        
+
+'''
     <VirtualHost *:80>
         ... ### your_settings_apache2 above ###
         
@@ -53,7 +71,7 @@ Untuk run server development, ketik di terminal:
         WSGIProcessGroup your_project
         WSGIScriptAlias /your_url_name /home/your_name/your_project/core/wsgi.py
     </VirtualHost>
-
+'''
 
 ### Django Template Language (DTL) ###
 
