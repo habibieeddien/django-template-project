@@ -25,6 +25,12 @@
             </div>
         </div>
 
+{% if modal %}
+<div class="alert alert-success">
+  <strong>Data Berhasil Tersimpan!</strong> Terima kasih atas laporan Anda.
+</div>
+{% endif %}
+
         <form action="/app2/" method="post">
             {% csrf_token %}
 

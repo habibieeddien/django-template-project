@@ -26,8 +26,15 @@ def index(request):
             # simpan ke DB
             form.save()
 
-            # redirect to a new URL:
-            return HttpResponseRedirect('/success/')
+            # Reset Form
+            form = BeritaForm()
+
+            # redirect to a new URL (jika ingin menggunakan template lain atau redirect ke page lain)
+            # return HttpResponseRedirect('/success/')
+
+            # jika hanya menampilkan pesan sukses berupa alert / modal
+            modal = True
+            return render(request, 'app2/wagform.html', {'form_html' : form, 'modal': modal})
 
     # if a GET (or any other method) we'll create a blank form
     else:
