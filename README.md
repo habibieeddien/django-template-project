@@ -101,3 +101,7 @@ Untuk run server development, ketik di terminal:
 
 * `{{ your_variable }}` --> untuk input variabel dari code Python ke HTML
 * `{% block your_variable_htmlTag %} Some_Text_Will_Replace_Here {% endblock your_variable_htmlTag %}` --> untuk override antar template HTML yang berbeda content.
+
+### TODOS ###
+
+* [FORM, LIST] READ, UPDATE, DELETE from DB
