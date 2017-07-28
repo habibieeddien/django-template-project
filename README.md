@@ -51,7 +51,7 @@ Untuk run server development, ketik di terminal:
 * enable mod_wsgi: `$ sudo a2enmod wsgi`
 * setting apache di `sudo vi /etc/apache2/site-available/000-default.conf` :
 
-'''
+<apache-script>
     <VirtualHost *:80>
         ... ### your_settings_apache2 above ###
         
@@ -71,7 +71,7 @@ Untuk run server development, ketik di terminal:
         WSGIProcessGroup your_project
         WSGIScriptAlias /your_url_name /home/your_name/your_project/core/wsgi.py
     </VirtualHost>
-'''
+</apache-script>
 
 ### Django Template Language (DTL) ###
 
